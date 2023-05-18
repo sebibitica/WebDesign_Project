@@ -78,9 +78,6 @@
           mysqli_close($con);
         ?>
     </main>
-    <footer>
-        <p>&copy; 2023 Movie Shop Website. All rights reserved.</p>
-    </footer>
     <script>
         $(document).ready(function(){
         $(".addbtn1").on("click",function(){

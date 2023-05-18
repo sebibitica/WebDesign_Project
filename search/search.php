@@ -25,12 +25,8 @@ if (isset($_GET['search'])) {
             <a class="movie" href="../movie/?id=<?php echo $row['id']; ?>">
               <img src="../<?php echo $row['img_dir']; ?>" class="image" />
               <div class="details">
-                <div class="nameofmovie">
-                  <h1><?php echo $row['title']; ?></h3>
-                </div>
-                <div class="director">
-                  <h3><?php echo $row['director']; ?></h2>
-                </div>
+                <h1><?php echo $row['title']; ?></h3>
+                <h3><?php echo $row['director']; ?></h2>
               </div>
             </a>
       <?php
