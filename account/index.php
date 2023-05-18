@@ -11,15 +11,21 @@
 </head>
 
 <body>
-  <header>
+<header>
     <div class="logo">
       <a href="../"><img src="../logo.png" alt="Movies" /></a>
     </div>
     <nav>
       <ul>
-        <li><a href="../search/">Search Movies</a></li>
+        <li><a href="../search/">Search</a></li>
         <li><a href="./">Account</a></li>
-        <li><a href="../about/">About</a></li>
+        <li class="dropdown">
+          <a href="../about/">About</a>
+          <div class="dropdown-content">
+            <a href="../about/">About Us</a>
+            <a href="../about/movies.html">About Movies</a>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>

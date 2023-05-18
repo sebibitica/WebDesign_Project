@@ -1,26 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Movie Shop & Review</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Shop Website</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
-    <img src="logo.png" class="logo"/>
+    <div class="logo">
+      <a href="./"><img src="logo.png" alt="Movies" /></a>
+    </div>
     <nav>
       <ul>
-        <li><a href="search/">Search Movies</a></li>
+        <li><a href="search/">Search</a></li>
         <li><a href="account/">Account</a></li>
-        <li><a href="about/">About</a></li>
+        <li class="dropdown">
+          <a href="about/">About</a>
+          <div class="dropdown-content">
+            <a href="about/">About Us</a>
+            <a href="about/movies.html">About Movies</a>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Welcome!</h1>
-
+    <div class="welcome">
+      <text class="welcome-title">Welcome to Movie Shop!</text>
+      <span style="font-size:36px">📽️</span>
+    </div>
     <section class="movies">
       <br>
       <h2>Here are the top Movies:</h2>
@@ -63,6 +76,15 @@
   <footer>
     <p>&copy; 2023 Movie Shop Website. All rights reserved.</p>
   </footer>
+  <script>
+    const title = document.querySelector('.welcome-title');
+    const text = title.textContent;
+    const letters = text.split('');
+
+    const coloredText = letters.map(letter => `<span>${letter}</span>`).join('');
+    title.innerHTML = coloredText;
+
+  </script>
 </body>
 
 </html>

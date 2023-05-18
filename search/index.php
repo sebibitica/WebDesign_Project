@@ -37,9 +37,15 @@
     </div>
     <nav>
       <ul>
-        <li><a href="./">Search Movies</a></li>
+        <li><a href="./">Search</a></li>
         <li><a href="../account/">Account</a></li>
-        <li><a href="../about/">About</a></li>
+        <li class="dropdown">
+          <a href="../about/">About</a>
+          <div class="dropdown-content">
+            <a href="../about/">About Us</a>
+            <a href="../about/movies.html">About Movies</a>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>

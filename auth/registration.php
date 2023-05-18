@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8"/>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration</title>
     <link rel="stylesheet" href="style_auth.css"/>
 </head>
@@ -10,9 +13,15 @@
     <a href="../"><img class="logo" src="../logo.png" alt="Movies" /></a>
     <nav>
       <ul>
-        <li><a href="../search/">Search Movies</a></li>
+        <li><a href="../search/">Search</a></li>
         <li><a href="../account/">Account</a></li>
-        <li><a href="../about/">About</a></li>
+        <li class="dropdown">
+          <a href="../about/">About</a>
+          <div class="dropdown-content">
+            <a href="../about/">About Us</a>
+            <a href="../about/movies.html">About Movies</a>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>

@@ -13,9 +13,15 @@
         <a href="../"><img class="logo" src="../logo.png" alt="Movies" /></a>
         <nav>
         <ul>
-            <li><a href="../search/">Search Movies</a></li>
+            <li><a href="../search/">Search</a></li>
             <li><a href="../account/">Account</a></li>
-            <li><a href="../about/">About</a></li>
+            <li class="dropdown">
+          <a href="../about/">About</a>
+          <div class="dropdown-content">
+            <a href="../about/">About Us</a>
+            <a href="../about/movies.html">About Movies</a>
+          </div>
+        </li>
         </ul>
         </nav>
     </header>
@@ -64,7 +70,7 @@
                             $checkStmt->execute();
                             $checkResult = $checkStmt->get_result();
                             if ($checkResult->num_rows <= 0) {
-                                echo '<img src="../movies_images/add.png" class="addbtn1" data-id="'.$row['id'].'"/>';
+                                echo '<img src="../movies_images/buy.png" class="addbtn1" data-id="'.$row['id'].'"/>';
                             }
                         }
                     ?>
@@ -97,7 +103,7 @@
                 },
                 success: function(data){
                     location.reload();
-                    alert("Movie added successfully");
+                    alert("You have successfully buyed this movie!\nYou can find it in your account page");
                 },
                 error: function(){
                     alert(response);
