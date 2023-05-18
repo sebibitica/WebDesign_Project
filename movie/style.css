@@ -132,3 +132,24 @@ footer {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .detalii {
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .movieimg {
+        height: 300px;
+        width: auto;
+    }
+
+    .addbtn1 {
+        margin-top: 20px;
+    }
+}
