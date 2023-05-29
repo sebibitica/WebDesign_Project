@@ -135,6 +135,7 @@ main {
   width: 100%;
   align-items: center;
   justify-content: center;
+  text-align: center;
   border-radius: 10px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
